@@ -1,20 +1,20 @@
 # Rede de sensores multisaltos
 
-One Paragraph of project description goes here
+Este projeto tem por objetivo a implementação de uma rede de sensores capaz de monitorar e coletar dados reais de um ambiente. Desta maneira, pela característica dispersa de seus nodos em relação à rede, uma [topologia](docs/img/topologia.png) foi definida a fim de testar os diversos saltos da mesma.
 
-## Getting Started
+## Começando
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+A documentação proposta neste README tem a intenção de ajudar na replicação do passo a passo do projeto em caráter de desenvolvimento e testes.
 
-### Prerequisites
+### Pré-Requisitos
 
-What things you need to install the software and how to install them
+Os softwares e ferramentas abaixo foram utilizadas no projeto e são necessários para replicá-lo em sua máquina.
 
 ```
 Give examples
 ```
 
-### Installing
+### Instalação
 
 A step by step series of examples that tell you how to get a development env running
 
