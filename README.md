@@ -2,87 +2,36 @@
 
 Este projeto tem por objetivo a implementação de uma rede de sensores capaz de monitorar e coletar dados reais de um ambiente. Desta maneira, pela característica dispersa de seus nodos em relação à rede, uma [topologia](docs/img/topologia.png) foi definida a fim de testar os diversos saltos da mesma.
 
-## Começando
+## Topologia
 
-A documentação proposta neste README tem a intenção de ajudar na replicação do passo a passo do projeto em caráter de desenvolvimento e testes.
+Esta rede será composta por 10 arduinos dispostos na topologia apresentada anteriormente, os dados serão coletados a partir de três sensores: dois sensores de temperatura e um ultrassônico, onde os dois primeiros serão colocados nas rotas de três e dois saltos e o último na rota de somente um salto, devido ao seu tempo de coleta ser bem mais rápido e transmitir mais frequentemente.
 
 ### Pré-Requisitos
 
-Os softwares e ferramentas abaixo foram utilizadas no projeto e são necessários para replicá-lo em sua máquina.
+Os components abaixo foram utilizadas no projeto e são necessários para replicá-lo de acordo com esse tutorial.
 
-```
-Give examples
-```
+10x Arduino UNO
+1x Sensor de distância ultrassônico HCSR-40
+2x Sensores de temperatura DHT11
 
-### Instalação
 
-A step by step series of examples that tell you how to get a development env running
+### Montagem
 
-Say what the step will be
+Config master:
 
-```
-Give the example
-```
+Config intermediário:
 
-And repeat
+Config sensores:
 
-```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo
+## Funcionamento
 
-## Running the tests
+Explicar funcionamento
 
-Explain how to run the automated tests for this system
+## Bibliotecas utilizadas
 
-### Break down into end to end tests
+* [NRF24L01+](https://tmrh20.github.io/RF24/) - Optimized High Speed NRF24L01+ Driver Class Documenation
 
-Explain what these tests test and why
+## Licença 
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+Este projeto é feito sob a licença GNU General Public License v3.0 - veja [LICENSE.md](LICENSE.md) para mais detalhes
