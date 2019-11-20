@@ -5,7 +5,7 @@ unsigned long distance;
 
 void loop() {
   void SENSOR_HC_SR_04() {
-    distance = ultrassom.Ranging(CM);
+    distance = ultrassom.Ranging(CM); // Coloca o valor da distância em centimetros (CM)
     delay(100);
     return distance;
   }
