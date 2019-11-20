@@ -13,9 +13,10 @@ unsigned int success = 0; //numero de mensagens que conseguiu enviar
 
 Ultrasonic ultrassom(8,7); // define o nome do sensor(ultrassom) e onde está ligado o trig(8) e o echo(7) respectivamente
 
-void setup() {
-  Serial.begin(9600); //Habilita Comunicação Serial a uma taxa de 9600 bauds.
-}
+//Pode retirar se funcionar sem o setup
+//void setup() {
+//  Serial.begin(9600); //Habilita Comunicação Serial a uma taxa de 9600 bauds.
+//}
 
 void loop() {
   network.update();
@@ -45,9 +46,9 @@ void loop() {
 
   void SENSOR_HC_SR_04() {
     distance = ultrassom.Ranging(CM);// retorna a distancia em centímetros (CM)
-    Serial.print(distancia); //imprime o valor da variável distancia
-    Serial.println("cm");
     delay(100);
+    
+    return distance
   }
   //Pode ser adicionado algum tipo de sleep nessa parte
 }
