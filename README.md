@@ -26,11 +26,15 @@ Config sensores:
 
 ## Funcionamento
 
-Explicar funcionamento
+Neste projeto, desenvolveu-se uma rede sem fio que conta com dispositivos nRF24L01, programados através de placas de desenvolvimento Arduíno. A rede é formada por sensores, nodos intermediários e um nodo mestre. Os nodos intermediários da ponta captam os dados dos sensores e enviam para o nodo seguinte, que reenvia até chegar no mestre. A rede é compostapor caminhos com somente um salto, em que o intermediário envia diretamente ao mestre; e por dois e três saltos, que correspondem ao numero de intermediários até o mestre.
+Os dados são coletados a partir de três sensores: um sensor de temperatura, um sensor de umidade e um ultrassônico, onde os dois primeiros são colocados nas rotas de três e dois saltos. O último é colocado na rota de somente um salto, devido ao seu tempo de coleta ser menor e, consequentemente,transmitir dados mais frequentemente.
 
 ## Bibliotecas utilizadas
 
 * [NRF24L01+](https://tmrh20.github.io/RF24/) - Optimized High Speed NRF24L01+ Driver Class Documenation
+* [HC-SR04](https://github.com/filipeflop/Ultrasonic) - Biblioteca Sensor Ultrassonico HC-SR04
+* [DHT-11](https://github.com/adafruit/DHT-sensor-library) - Arduino library for DHT11, Humidity Sensor
+* [LM-35](https://github.com/ggzucco/LM35) - Library of temperature sensor LM35 for Arduino
 
 ## Licença 
 
