@@ -6,7 +6,9 @@ void setup() {
 } 
 
 void loop() {
-  temperature = (float(analogRead(LM35))*5/(1023))/0.01; //Realiza os cálculos para determinar a temperatura em Celsius 
-  delay(100);  
-  return temperature;
+  float temperature_function(){
+    temperature = (float(analogRead(LM35))*5/(1023))/0.01; //Realiza os cálculos para determinar a temperatura em Celsius 
+    delay(100);  
+    return temperature;
+  }
 }
