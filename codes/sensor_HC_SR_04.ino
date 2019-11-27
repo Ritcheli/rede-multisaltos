@@ -4,7 +4,7 @@ Ultrasonic ultrassom(8,7); // Define o nome do sensor e os pinos que estão cone
 unsigned long distance; 
 
 void loop() {
-  void SENSOR_HC_SR_04() {
+  unsigned long ultrassonic_sensor() {
     distance = ultrassom.Ranging(CM); // Coloca o valor da distância em centimetros (CM)
     delay(100);
     return distance;
