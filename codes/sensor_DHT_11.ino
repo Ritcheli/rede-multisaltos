@@ -12,16 +12,17 @@ void setup()
  
 void loop()
 {
-  float h = dht.readHumidity();
-  // testa se retorno é valido, caso contrário algo está errado.
-  delay(100);
-  if (isnan(t) || isnan(h))
-  {
-    Serial.println("Failed to read from DHT");
+  float humidity_sensor(){
+    float h = dht.readHumidity();
+    // testa se retorno é valido, caso contrário algo está errado.
+    delay(100);
+    if (isnan(t) || isnan(h))
+    {
+      Serial.println("Failed to read from DHT");
+    }
+    else
+    {
+      return h;
+    }
   }
-  else
-  {
-    return h;
-  }
- // Teste
 }
